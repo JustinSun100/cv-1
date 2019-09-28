@@ -7,9 +7,15 @@ let string = `/*
 首先创建一个div
 */
 #div1{
-    border:1px solid red;
+    border:1px solid blue;
     width:200px;
     height:200px;
+}
+/*
+*改一下字的颜色
+*/
+html{
+    color:orange;
 }
 /*
 *接下来我们把div变成八卦图
@@ -96,7 +102,7 @@ let step = () => {
         if (n < string.length) {
             step();
         }
-    }, 0);
+    }, 40);
 }
 step();
 
