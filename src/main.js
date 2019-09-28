@@ -1,7 +1,8 @@
 let html = document.querySelector("#html");
 let style = document.querySelector("#style");
 
-let string = `/*你好，我是小孙
+let string = `/*
+你好，我是小孙
 接下来我来展示我的前端功底
 首先创建一个div
 */
@@ -52,6 +53,20 @@ let string = `/*你好，我是小孙
     border-radius:50%;
     background: radial-gradient(circle, rgba(0,0,0,1) 0%, rgba(0,0,0,1) 0%, rgba(0,0,0,1) 0%, rgba(0,0,0,1) 0%, rgba(0,0,0,1) 0%, rgba(0,0,0,1) 25%, rgba(255,255,255,1) 25%, rgba(255,255,255,1) 100%);
 }
+/*
+*最后我们让他开始旋转
+*/
+@keyframes rotate{
+    from{
+        transform: rotate(0);
+    }
+    to{
+        transform: rotate(360deg);       
+    }
+}
+#div1{
+    animation: linear 3s rotate infinite ;
+}
 `;
 let string2 = "";
 
@@ -81,7 +96,7 @@ let step = () => {
         if (n < string.length) {
             step();
         }
-    }, 50);
+    }, 0);
 }
 step();
 
