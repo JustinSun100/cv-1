@@ -145,7 +145,7 @@ var step = function step() {
     n += 1; //当n等于length是就停止
 
     window.scrollTo(0, 9999);
-    document.scrollTo(0, 9999);
+    html.scrollTo(0, 9999);
 
     if (n < string.length) {
       step();
